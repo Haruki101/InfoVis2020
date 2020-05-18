@@ -1,12 +1,17 @@
-Vec3.prototype.add = function(v)
-{
-	this.x += v.x;
-	this.y += v.y;
-	this.z += v.z;
-	return this;
-}
-
-Vec3.prototype.sum = function()
-{
-	return this.x + this.y + this.z;
+class Vec3 {
+	constructor(x,y,z){
+	this.x = x;
+	this.y = y;
+	this.z = z;
+	} 
+	
+	add(v){
+		this.x += v.x;
+		this.y += v.y;
+		this.z += v.z;
+	}
+	
+	sum(){
+		return (this.x + this.y + this.z);
+	}	
 }

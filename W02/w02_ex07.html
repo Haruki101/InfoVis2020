@@ -5,10 +5,13 @@
 	<body>
 		<script src="vec3.js"></script>
 		<script>
-			var v1 = new Vec3(5,4,8);
-			var v2 = new Vec3(2,1,7);
+			var x = 5, y = 4, z = 8;
+			var a = 2, b = 1, c = 7;
+			var v1 = new Vec3(x,y,z);
+			var v2 = new Vec3(a,b,c);
 			var v = v1.add(v2);
 			var sum = v.sum();
+			document.write(sum);
 		</script>
 	</body>
 </html>
